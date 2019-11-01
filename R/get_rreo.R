@@ -31,11 +31,6 @@ get_rreo<- function(year, period, report_tp, annex, entity, In_RGPS=FALSE, In_RP
       str_length(entity)== 7 ~"M"
     ) )
 
-  #Depois verificar uma forma de se tirar essa chamada à API. Passar a consumir um dado previamente carregado
-  ls_reports<-jsonlite::fromJSON("http://apidatalake.tesouro.gov.br/ords/siconfi/tt/anexos-relatorios")
-
-  df_reports <- ls_reports[["items"]]
-
 
   annex_txt<-paste0("RREO-Anexo ",annex, ifelse(In_RGPS," - RGPS", ifelse(In_RPPS," - RPPS","")))
 

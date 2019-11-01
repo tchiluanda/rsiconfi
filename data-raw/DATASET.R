@@ -10,3 +10,11 @@ municipios_IBGE <- municipios_IBGE%>%
 
 
 usethis::use_data(municipios_IBGE)
+
+
+#Depois verificar uma forma de se tirar essa chamada à API. Passar a consumir um dado previamente carregado
+ls_reports<-jsonlite::fromJSON("http://apidatalake.tesouro.gov.br/ords/siconfi/tt/anexos-relatorios")
+
+df_reports <- ls_reports[["items"]]
+
+usethis::use_data(df_reports)
