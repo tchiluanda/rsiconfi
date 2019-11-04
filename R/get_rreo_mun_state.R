@@ -19,6 +19,7 @@
 #' get_rreo_mun_state(2017,1,1,"01","11")
 get_rreo_mun_state<- function(year, period, report_tp, annex, state, In_RGPS=FALSE, In_RPPS= FALSE ){
 
+  library(dplyr)
 
 
   mun<-(municipios_IBGE%>%

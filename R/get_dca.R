@@ -17,6 +17,13 @@
 #' get_dca(year = c(2018), annex = "I-C",  entity = "21")
 get_dca<- function(year, annex, entity, arg_cod_conta=NULL, In_QDCC=FALSE){
 
+  library(dplyr)
+  library(purrr)
+  library(stringr)
+  library(jsonlite)
+
+
+
   #test if some variables have just one element
 
   if (length(annex)>1){
@@ -25,7 +32,7 @@ get_dca<- function(year, annex, entity, arg_cod_conta=NULL, In_QDCC=FALSE){
 
   #test some business rules
 
-  df_esf_entidade = tibble(entidade = entity )
+  df_esf_entidade = data.frame(entidade = entity )
 
   df_esf_entidade<-df_esf_entidade%>%
     mutate(esfera= case_when(

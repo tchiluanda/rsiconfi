@@ -13,9 +13,10 @@
 #' @export
 #'
 #' @examples
-#' get_dca_mun_state( year = c(2018),  annex = "I-C",  arg_cod_conta = c("TotalReceitas", "1.7.0.0.00.0.0", "2.4.0.0.00.0.0"),  state = c(21:29))
+#' get_dca_mun_state( year = c(2018),  annex = "I-C",  arg_cod_conta = c("TotalReceitas", "1.7.0.0.00.0.0", "2.4.0.0.00.0.0"),  state = c(11))
 get_dca_mun_state<- function(year, annex, state, arg_cod_conta=NULL,In_QDCC= FALSE ){
 
+  library(dplyr)
 
   mun<-(municipios_IBGE%>%
 

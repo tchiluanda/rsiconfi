@@ -26,5 +26,5 @@ Get data related to annual accounts for all the municipalities of a given Brazil
 For more information about these reports, please see https://siconfi.tesouro.gov.br/siconfi/pages/public/conteudo/conteudo.jsf?id=82
 }
 \examples{
-get_dca_mun_state( year = c(2018),  annex = "I-C",  arg_cod_conta = c("TotalReceitas", "1.7.0.0.00.0.0", "2.4.0.0.00.0.0"),  state = c(21:29))
+get_dca_mun_state( year = c(2018),  annex = "I-C",  arg_cod_conta = c("TotalReceitas", "1.7.0.0.00.0.0", "2.4.0.0.00.0.0"),  state = c(11))
 }

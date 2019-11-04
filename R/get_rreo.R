@@ -20,6 +20,12 @@
 get_rreo<- function(year, period, report_tp, annex, entity, In_RGPS=FALSE, In_RPPS= FALSE ){
 
 
+  library(dplyr)
+  library(purrr)
+  library(stringr)
+  library(jsonlite)
+
+
   #test if some variables have just one element
 
   print(length(report_tp))

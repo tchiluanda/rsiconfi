@@ -1,13 +1,13 @@
 Package: rsiconfi
-Title: What the Package Does (One Line, Title Case)
+Title: Accounting Data of Brazilian Public Sector
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Fernando",
+           family = "Barbalho",
            role = c("aut", "cre"),
            email = "first.last@example.com",
            comment = structure("YOUR-ORCID-ID", .Names = "ORCID"))
-Description: What the package does (one paragraph).
+Description: Retrieve accounting data from brazilian public sector databases.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -16,5 +16,7 @@ Imports:
     dplyr,
     purrr,
     stringr,
-    stats
+    stats,
+    magrittr,
+    curl
 RoxygenNote: 6.1.1

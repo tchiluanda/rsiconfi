@@ -29,5 +29,5 @@ dataframe
 Get Municipalities Fiscal Managment Data
 }
 \examples{
-get_rgf_mun_state(year=  c(2018),  periodicity = "Q",  period =  3, report_tp = 1,  annex = "01",  state = c(11:17), co_power = "E")
+get_rgf_mun_state(year=  c(2018),  periodicity = "Q",  period =  3, report_tp = 1,  annex = "01",  state = c(11), co_power = "E")
 }

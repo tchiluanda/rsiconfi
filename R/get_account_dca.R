@@ -13,6 +13,8 @@
 #' get_account_dca(c(2018), "I-E", c("2402600") )
 get_account_dca <- function(year, annex, entity, grouped_by_year=FALSE, grouped_by_entity=FALSE){
 
+  library(dplyr)
+
   df_siconfi<- get_dca(year, annex, entity)
 
 

@@ -12,16 +12,10 @@
 #' @export
 #'
 #' @examples
-#' get_rgf_mun_state(year=  c(2018),  periodicity = "Q",  period =  3, report_tp = 1,  annex = "01",  state = c(11:17), co_power = "E")
+#' get_rgf_mun_state(year=  c(2018),  periodicity = "Q",  period =  3, report_tp = 1,  annex = "01",  state = c(11), co_power = "E")
 get_rgf_mun_state<- function(year, periodicity, period, report_tp, annex, state, co_power ){
 
-  municipios_IBGE <- read_csv("Data/Municpios_IBGE - Sheet1.csv",
-                              col_types = cols(`COD. UF` = col_character()))
-
-  names(municipios_IBGE)<- c("uf","cod_uf","cod_mun","nome_municipio","pop_estimada")
-
-  municipios_IBGE <- municipios_IBGE%>%
-    mutate(cod_mun =  paste0(cod_uf, cod_mun))
+  library(dplyr)
 
   mun<-(municipios_IBGE%>%
 

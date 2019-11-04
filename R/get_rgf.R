@@ -19,6 +19,12 @@
 #' get_rgf(year=  c(2018),  periodicity = "Q",  period =  1,    report_tp = 1,      annex = "02",       entity = c("2312908"),   co_power = "E")
 get_rgf<- function(year, periodicity, period, report_tp, annex, entity, co_power ){
 
+  library(dplyr)
+  library(purrr)
+  library(stringr)
+  library(jsonlite)
+
+
   #test if some variables have just one element
 
   if (length(report_tp)>1){

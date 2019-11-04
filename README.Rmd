@@ -1,0 +1,51 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# rsiconfi
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of rsiconfi is to ...
+
+## Installation
+
+You can install the released version of rsiconfi from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+devtools::install_github("jennybc/foofactors")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("tchiluanda/rsiconfi")
+```
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(rsiconfi)
+## get Rondonia's expenses on Health
+get_dca(year = 2018,
+        annex = "I-E",
+        entity = "11", 
+        arg_cod_conta = "10")
+
+```
+
