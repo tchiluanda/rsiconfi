@@ -6,19 +6,14 @@ rsiconfi
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of rsiconfi is to …
+The goal of rsiconfi is to retrieve accounting data from brazilian
+public sector databases.
 
 Installation
 ------------
 
-You can install the released version of rsiconfi from
-[CRAN](https://CRAN.R-project.org) with:
-
-``` r
-devtools::install_github("jennybc/foofactors")
-```
-
-And the development version from [GitHub](https://github.com/) with:
+You can install the development version from
+[GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
