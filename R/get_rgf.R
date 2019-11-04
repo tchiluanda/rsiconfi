@@ -1,3 +1,22 @@
+#' Get Fiscal Managment Data
+#'
+#' @description
+#' Get data related to fiscal management reports of a given set of entities of the public brazilian sector, filtered by a set of parameters passed to the function.
+#' For more information about these reports, please see https://siconfi.tesouro.gov.br/siconfi/pages/public/conteudo/conteudo.jsf?id=82
+
+#' @param year a numeric vector
+#' @param periodicity character. Available values: Q, S
+#' @param period a numeric vector. Available values: 1, 2, 3
+#' @param report_tp numeric. Available values: 1- RGF, 2-RGF Simplificado
+#' @param annex character
+#' @param entity a character vector. IBGE code of a public sector entities set.
+#' @param co_power a character vector.Available values:  E = Executivo, L = Legislativo, J = Judiciário, M = Ministério Público, D = Defensoria Pública
+#'
+#' @return dataframe
+#' @export
+#'
+#' @examples
+#' get_rgf(year=  c(2018),  periodicity = "Q",  period =  1,    report_tp = 1,      annex = "02",       entity = c("2312908"),   co_power = "E")
 get_rgf<- function(year, periodicity, period, report_tp, annex, entity, co_power ){
 
   #test if some variables have just one element

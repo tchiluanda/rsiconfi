@@ -1,3 +1,22 @@
+#' Get Budgetary Execution Report Data
+#'
+#' @description
+#' Get data related to budgetary execution reports of a given set of entities of the public brazilian sector, filtered by a set of parameters passed to the function.
+#' For more information about these reports, please see https://siconfi.tesouro.gov.br/siconfi/pages/public/conteudo/conteudo.jsf?id=82
+#'
+#' @param year a numeric vector
+#' @param period a numeric vector. Available values: 1, 2, 3, 4, 5, 6
+#' @param report_tp numeric. Available values: 1- RREO, 2-RREO Simplificado
+#' @param annex character
+#' @param entity a character vector. IBGE code of a public sector entities set.
+#' @param In_RGPS boolean. Default = FALSE
+#' @param In_RPPS boolean. Default = FALSE
+#'
+#' @return dataframe
+#' @export
+#'
+#' @examples
+#' get_rreo(2017,1,1,"01","1")
 get_rreo<- function(year, period, report_tp, annex, entity, In_RGPS=FALSE, In_RPPS= FALSE ){
 
 
