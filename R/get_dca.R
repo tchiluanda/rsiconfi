@@ -32,7 +32,7 @@ get_dca<- function(year, annex, entity, arg_cod_conta=NULL, In_QDCC=FALSE){
 
   #test some business rules
 
-  df_esf_entidade = data.frame(entidade = entity )
+  df_esf_entidade = tibble(entidade = entity )
 
   df_esf_entidade<-df_esf_entidade%>%
     mutate(esfera= case_when(
