@@ -2,7 +2,7 @@
 #'
 #' @param year a numeric vector
 #' @param annex character
-#' @param entity  a character vector. IBGE code of a public sector entities set.
+#' @param entity  a character vector. IBGE codes of a public sector entities set.
 #' @param grouped_by_year boolean. Default = FALSE
 #' @param grouped_by_entity boolean. Default = FALSE
 #'

@@ -2,7 +2,7 @@
 #'
 #' @description
 #' Get data related to annual accounts reports of a given set of entities of the public brazilian sector, filtered by a set of parameters passed to the function.
-#' For more information about these reports, please see https://siconfi.tesouro.gov.br/siconfi/pages/public/conteudo/conteudo.jsf?id=82
+#' For more information about these reports, please see: https://siconfi.tesouro.gov.br/siconfi/pages/public/conteudo/conteudo.jsf?id=82
 
 #' @param year a numeric vector
 #' @param annex character

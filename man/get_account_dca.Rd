@@ -12,7 +12,7 @@ get_account_dca(year, annex, entity, grouped_by_year = FALSE,
 
 \item{annex}{character}
 
-\item{entity}{a character vector. IBGE code of a public sector entities set.}
+\item{entity}{a character vector. IBGE codes of a public sector entities set.}
 
 \item{grouped_by_year}{boolean. Default = FALSE}
 

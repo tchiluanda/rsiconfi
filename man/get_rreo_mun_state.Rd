@@ -23,12 +23,11 @@ get_rreo_mun_state(year, period, report_tp, annex, state,
 \item{In_RPPS}{boolean. Default = FALSE}
 }
 \value{
-A dataframe with the result set of a given entity of the public brazilian set, filtered by a set of parameters passed to the function
+A dataframe with the resultset of a given entity of the public brazilian set, filtered by a set of parameters passed to the function
 }
 \description{
-#' @description
 Get data related to budgetary execution reports for all the municipalities of a given Brazilian states set, filtered by a set of parameters passed to the function.
-For more information about these reports, please see https://siconfi.tesouro.gov.br/siconfi/pages/public/conteudo/conteudo.jsf?id=82
+For more information about these reports, please see: https://siconfi.tesouro.gov.br/siconfi/pages/public/conteudo/conteudo.jsf?id=82
 }
 \examples{
 get_rreo_mun_state(2017,1,1,"01","11")

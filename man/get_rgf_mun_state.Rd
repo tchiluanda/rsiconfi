@@ -26,7 +26,9 @@ get_rgf_mun_state(year, periodicity, period, report_tp, annex, state,
 dataframe
 }
 \description{
-Get Municipalities Fiscal Managment Data
+f
+Get data related to fiscal management reports for all the municipalities of a given Brazilian states set, filtered by a set of parameters passed to the function.
+For more information about these reports, please see https://siconfi.tesouro.gov.br/siconfi/pages/public/conteudo/conteudo.jsf?id=82
 }
 \examples{
 get_rgf_mun_state(year=  c(2018),  periodicity = "Q",  period =  3, report_tp = 1,  annex = "01",  state = c(11), co_power = "E")

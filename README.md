@@ -6,7 +6,7 @@ rsiconfi
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of rsiconfi is to retrieve accounting data from brazilian
+The goal of `rsiconfi` is to retrieve accounting data from brazilian
 public sector databases.
 
 Installation
@@ -32,6 +32,23 @@ get_dca(year = 2018,
         annex = "I-E",
         entity = "11", 
         arg_cod_conta = "10")
+#> 
+#> Attaching package: 'dplyr'
+#> The following objects are masked from 'package:stats':
+#> 
+#>     filter, lag
+#> The following objects are masked from 'package:base':
+#> 
+#>     intersect, setdiff, setequal, union
+#> Warning: package 'purrr' was built under R version 3.4.4
+#> Warning: package 'stringr' was built under R version 3.4.4
+#> Warning: package 'jsonlite' was built under R version 3.4.4
+#> 
+#> Attaching package: 'jsonlite'
+#> The following object is masked from 'package:purrr':
+#> 
+#>     flatten
+#> Joining, by = "esfera"
 #> [1] "http://apidatalake.tesouro.gov.br/ords/siconfi/tt/dca?an_exercicio=2018&no_anexo=DCA-Anexo%20I-E&id_ente=11"
 #> [1] 454
 #>   exercicio                   instituicao cod_ibge uf         anexo

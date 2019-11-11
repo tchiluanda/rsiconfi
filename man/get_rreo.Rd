@@ -26,8 +26,8 @@ get_rreo(year, period, report_tp, annex, entity, In_RGPS = FALSE,
 dataframe
 }
 \description{
-Get data related to budgetary execution reports of a given set of entities of the public brazilian sector, filtered by a set of parameters passed to the function.
-For more information about these reports, please see https://siconfi.tesouro.gov.br/siconfi/pages/public/conteudo/conteudo.jsf?id=82
+Get data related to budgetary execution reports of a given set of entities of the brazilian public sector, filtered by a set of parameters passed to the function.
+For more information about these reports, please see: https://siconfi.tesouro.gov.br/siconfi/pages/public/conteudo/conteudo.jsf?id=82
 }
 \examples{
 get_rreo(2017,1,1,"01","1")

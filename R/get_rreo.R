@@ -1,8 +1,8 @@
 #' Get Budgetary Execution Report Data
 #'
 #' @description
-#' Get data related to budgetary execution reports of a given set of entities of the public brazilian sector, filtered by a set of parameters passed to the function.
-#' For more information about these reports, please see https://siconfi.tesouro.gov.br/siconfi/pages/public/conteudo/conteudo.jsf?id=82
+#' Get data related to budgetary execution reports of a given set of entities of the brazilian public sector, filtered by a set of parameters passed to the function.
+#' For more information about these reports, please see: https://siconfi.tesouro.gov.br/siconfi/pages/public/conteudo/conteudo.jsf?id=82
 #'
 #' @param year a numeric vector
 #' @param period a numeric vector. Available values: 1, 2, 3, 4, 5, 6
