@@ -85,7 +85,39 @@ get_dca<- function(year, annex, entity, arg_cod_conta=NULL, In_QDCC=FALSE){
 
       print(exp)
 
-      ls_siconfi<-jsonlite::fromJSON(exp)
+      res<-try(jsonlite::fromJSON(exp))
+
+      cont_err<-0
+      error<- FALSE
+
+      if(inherits(res, "try-error")){ #Se deu erro tenta mais 5 vezes
+
+        print(res)
+
+        cont_err<- cont_err+1
+        error<- TRUE
+        while (cont_err<=5 && error  ) {
+          res<-try(jsonlite::fromJSON(exp))
+          if(inherits(res, "try-error")){
+            cont_err<- cont_err+1
+            error<- TRUE
+
+          } else{
+
+            error<- FALSE
+          }
+
+
+        }
+
+      }
+
+      if(error){
+        warning(paste0("Entity ", ref_entity, " not processed due to error"))
+        return (tibble())
+      }
+
+      ls_siconfi<-res
 
 
       print(ls_siconfi$count)
