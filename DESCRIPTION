@@ -5,8 +5,7 @@ Authors@R:
     person(given = "Fernando",
            family = "Barbalho",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = structure("YOUR-ORCID-ID", .Names = "ORCID"))
+           email = "first.last@example.com")
 Description: Retrieve accounting data from brazilian public sector databases.
 License: MIT + file LICENSE
 Encoding: UTF-8
